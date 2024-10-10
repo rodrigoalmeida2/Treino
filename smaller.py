@@ -25,8 +25,6 @@ def count_smaller_numbers(arr):
     
     return qantos_num_menores
 
-
-
 if __name__=="__main__":
     #Exemplo 1
     menor = [1, 2, 0]
