@@ -12,14 +12,14 @@ def smaller(err):
     return qantos_num_menores
 
 # Retorna a quantidade de numeros menores a diretita de err[i]
-def count_smaller_numbers(arr):
+def count_smaller_numbers(err):
     qantos_num_menores = []
-    n = len(arr)
+    n = len(err)
     
     for i in range(n):
         count = 0
         for j in range(i+1, n):
-            if arr[j] < arr[i]:
+            if err[j] < err[i]:
                 count += 1
         qantos_num_menores.append(count)
     
@@ -30,5 +30,5 @@ if __name__=="__main__":
     menor = [1, 2, 0]
     print(smaller(menor))
     #exemplo 2
-    arr = [1, 2, 0]
-    print(count_smaller_numbers(arr))
+    err = [1, 2, 0]
+    print(count_smaller_numbers(err))
