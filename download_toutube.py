@@ -11,7 +11,7 @@ def download_video(url, output_filename="video.mp4"):
         ydl.download([url])
 
 # URL do vídeo que você quer baixar
-video_url = "https://youtu.be/2QcSvOSXTBc"
+video_url = "https://youtu.be/fU9srn4mTSM"
 
 # Baixar o vídeo
 download_video(video_url)
