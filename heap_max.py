@@ -1,3 +1,4 @@
+# Pega um array e organiza do maior para o menor
 def heapify(arr, n, i):
     maior = i  # Inicializa o maior como raiz
     esquerda = 2 * i + 1  # Filho esquerdo
