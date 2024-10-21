@@ -5,10 +5,10 @@ def calcular_distancia(x1, y1, x2, y2):
   return distancia
 
 # Exemplo de uso:
-ponto1_x = 5
-ponto1_y = 7
-ponto2_x = 5
-ponto2_y = 7
+x1 = 5
+y1 = 7
+x2 = 5
+y2 = 7
 
-resultado = calcular_distancia(ponto1_x, ponto1_y, ponto2_x, ponto2_y)
+resultado = calcular_distancia(x1, y1, x2, y2)
 print("A distância entre os pontos é:", resultado)
