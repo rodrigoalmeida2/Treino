@@ -1,4 +1,4 @@
-import yt_dlp # type: ignore
+import yt_dlp
 
 # Função para baixar o vídeo
 def download_video(url, output_filename="video.mp4"):
@@ -11,7 +11,7 @@ def download_video(url, output_filename="video.mp4"):
         ydl.download([url])
 
 # URL do vídeo que você quer baixar
-video_url = "https://youtu.be/fU9srn4mTSM"
+video_url = "https://youtu.be/VrN_pbj2Kds"
 
 # Baixar o vídeo
 download_video(video_url)
