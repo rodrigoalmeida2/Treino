@@ -1,19 +1,16 @@
+def reverseWords(s: str) -> str:
+    words = s.split(" ")
+    print(words)
+    reversed_words = []
 
-def reverse(s: str) -> list[str]:
-    res = ''
-    l, r = 0, 0
+    for word in words:
+        reversed_word = ""
+        for char in word:
+            reversed_word = char + reversed_word
+        reversed_words.append(reversed_word)
 
-    while r < len(s):
-        if s[r] != ' ':
-            r += 1
-        else:
-            res += s[l:r+1][::-1]
-            r += 1
-            l = r
+    return " ".join(reversed_words)
 
-    res += ' '
-    res += s[l:r + 2][::-1]
-    
-    return res[1:]
 
+print(reverseWords("the sky is blue"))
 # Mais rápido: return ' '.join(word[::-1] for word in s.split())
